@@ -1,0 +1,25 @@
+{
+    "artboards": [
+        "/src/screens/Home.js",
+        "/src/screens/Driving.js",
+        "/src/screens/Community.js",
+        "/src/screens/Alerts.js"
+    ],
+    "symbols": [
+        "/src/symbols/Navigation.js",
+        "/src/symbols/Header.js",
+        "/src/symbols/Footer.js",
+        "/src/symbols/Background.js"
+    ],
+    "assets": [],
+    "defaultArtboardDirectory": "/src/screens",
+    "defaultSymbolDirectory": "/src/symbols",
+    "defaultAssetDirectory": "/src/assets",
+    "deviceName": "iPhone X",
+    "deviceOrientation": "portrait",
+    "basePath": "/Users/acampbell/Desktop/My Stuff/_Maikel/car-app/connected-driver",
+    "tempPath": "/var/folders/79/dpbbwxms6rgc7ytdtrftbwkh0000gp/T/BuilderTIhtotg",
+    "useStylesheet": true,
+    "rulers": {},
+    "missingFonts": []
+}
