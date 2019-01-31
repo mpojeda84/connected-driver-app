@@ -24,16 +24,17 @@ const list = [
 
 export default class Alerts extends Component {
     state = {
-        car: null,
+        list: null,
         loading: true
     }
     componentDidMount () {
-        realtime.ref('cars/2HMDJJFB2JJ000017')
+        realtime.ref('messages/2HMDJJFB2JJ000017')
             .on('value', (snapshot) => {
-                this.setState({ car: snapshot.val(), loading: false })
+                this.setState({ list: snapshot.val(), loading: false })
             })
     }
     render () {
+        const { list } = this.state
         return (
             <View style={styles.root}>
                 <Header style={styles.header} />
@@ -45,9 +46,9 @@ export default class Alerts extends Component {
                     keyExtractor={(item) => (Date.now() + Math.random()).toString()}
                     renderItem={({ item, index }) => {
                         return (
-                            <View key={index} style={{flexDirection: 'row', padding: 15, marginRight: 10}}>
-                                <Icon style={[styles.icon]}name='warning' type='FontAwesome' color={item.severity === '1' ? 'red' : 'rgba(255,217,41,1)'} />
-                                <View style={{paddingRight: 15}}>
+                            <View key={index} style={{ flexDirection: 'row', padding: 15, marginRight: 10 }}>
+                                <Icon style={[styles.icon]} name='warning' type='FontAwesome' color={item.severity === '1' ? 'red' : 'rgba(255,217,41,1)'} />
+                                <View style={{ paddingRight: 15 }}>
                                     <Text style={styles.text2}>{item.date}</Text>
                                     <Text style={styles.text3}>{item.message}</Text>
                                 </View>
