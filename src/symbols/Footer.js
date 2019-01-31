@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Icon from "@builderx/icons";
-import Navigation from "./Navigation";
+import { Center } from "@builderx/utils";
+
 import { View, StyleSheet } from "react-native";
 
 export default class Footer extends Component {
@@ -21,10 +22,6 @@ export default class Footer extends Component {
             this.props.navigation.push("Home");
           }}
         />
-        <Navigation
-          style={styles.navigation}
-          navigation={this.props.navigation}
-        />
         <Icon
           style={styles.icon3}
           name="group"
@@ -39,6 +36,14 @@ export default class Footer extends Component {
           type="FontAwesome"
           onPress={() => {
             this.props.navigation.push("Alerts");
+          }}
+        />
+        <Icon
+          name="automobile"
+          style={styles.icon5}
+          type="FontAwesome"
+          onPress={() => {
+            this.props.navigation.push("Driving");
           }}
         />
       </View>
@@ -63,27 +68,29 @@ const styles = StyleSheet.create({
     color: "grey",
     fontSize: 40
   },
-  navigation: {
-    top: 14,
-    left: 127,
-    width: 40,
-    height: 40,
-    position: "absolute"
-  },
+
   icon3: {
-    top: 14,
+    top: 19,
     left: 203,
     position: "absolute",
     backgroundColor: "transparent",
     color: "grey",
-    fontSize: 40
+    fontSize: 32
   },
   icon4: {
-    top: 14,
+    top: 18,
     left: 287,
     position: "absolute",
     backgroundColor: "transparent",
     color: "grey",
-    fontSize: 40
+    fontSize: 33
+  },
+  icon5: {
+    left: 124,
+    position: "absolute",
+    backgroundColor: "transparent",
+    color: "grey",
+    fontSize: 32,
+    top: "20.45%"
   }
 });

@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import Header from "../symbols/Header";
 import Footer from "../symbols/Footer";
 import Background from "../symbols/Background";
-import { View, StyleSheet } from "react-native";
+import Icon from "@builderx/icons";
+import { Center } from "@builderx/utils";
+import { View, StyleSheet, Text } from "react-native";
 
 export default class Alerts extends Component {
   render() {
@@ -11,6 +13,31 @@ export default class Alerts extends Component {
         <Header style={styles.header} />
         <Footer style={styles.footer} navigation={this.props.navigation} />
         <Background style={styles.background} />
+        <Icon style={styles.icon} name="alert" type="MaterialCommunityIcons" />
+        <Text style={styles.text2}>01/19/2019 05:35PM</Text>
+        <Text style={styles.text3}>Speed Higher than 85mph</Text>
+        <Icon
+          style={styles.ZlMhzp}
+          name="alert"
+          type="MaterialCommunityIcons"
+        />
+        <Center horizontal>
+          <Text style={styles.text4}>Alerts</Text>
+        </Center>
+        <Text style={styles.text5}>Speed Higher than 85mph</Text>
+        <Text style={styles.text6}>01/18/2019 04:56PM</Text>
+        <View style={styles.rect} />
+        <View style={styles.rect2} />
+        <Center horizontal>
+          <View style={styles.rect3} />
+        </Center>
+        <Icon
+          style={styles.icon2}
+          name="engine"
+          type="MaterialCommunityIcons"
+        />
+        <Text style={styles.text7}>Speed Higher than 85mph</Text>
+        <Text style={styles.text8}>01/18/2019 04:56PM</Text>
       </View>
     );
   }
@@ -36,9 +63,128 @@ const styles = StyleSheet.create({
   },
   background: {
     top: "12.68%",
-    left: "0%",
+
     width: 375,
     height: 631,
-    position: "absolute"
+    position: "absolute",
+    left: "0%"
+  },
+
+  icon: {
+    top: 311,
+    left: 50,
+    position: "absolute",
+    backgroundColor: "transparent",
+    color: "rgba(255,217,41,1)",
+    fontSize: 40
+  },
+  text2: {
+    top: "38.05%",
+    left: 101,
+    position: "absolute",
+    backgroundColor: "transparent",
+    opacity: 1,
+    fontSize: 13,
+    fontFamily: "Arial-BoldMT",
+    color: "rgba(255,255,255,1)"
+  },
+  text3: {
+    top: "40.27%",
+    left: 99,
+    position: "absolute",
+    backgroundColor: "transparent",
+    opacity: 1,
+    fontSize: 18,
+    fontFamily: "Arial-BoldMT",
+    color: "rgba(255,255,255,1)"
+  },
+
+  ZlMhzp: {
+    top: "50.37%",
+    left: 51,
+    position: "absolute",
+    backgroundColor: "transparent",
+    color: "rgba(255,217,41,1)",
+    fontSize: 40
+  },
+
+  text4: {
+    top: 151,
+    position: "absolute",
+    backgroundColor: "transparent",
+    fontSize: 40,
+    fontFamily: "Arial-BoldMT",
+    color: "rgba(255,255,255,1)"
+  },
+  text5: {
+    top: "52.59%",
+    left: 101,
+    position: "absolute",
+    backgroundColor: "transparent",
+    opacity: 1,
+    fontSize: 18,
+    fontFamily: "Arial-BoldMT",
+    color: "rgba(255,255,255,1)"
+  },
+  text6: {
+    left: 102,
+    position: "absolute",
+    backgroundColor: "transparent",
+    opacity: 1,
+    fontSize: 13,
+    fontFamily: "Arial-BoldMT",
+    color: "rgba(255,255,255,1)",
+    top: "50.37%"
+  },
+  rect: {
+    width: 310,
+    height: 0,
+    position: "absolute",
+    backgroundColor: "rgb(230,230,230)",
+    left: "13.07%",
+    top: "56.4%"
+  },
+  rect2: {
+    width: 310,
+    height: 1,
+    position: "absolute",
+    backgroundColor: "rgb(230,230,230)",
+    top: "58%",
+    left: "8.8%"
+  },
+  rect3: {
+    top: "47.04%",
+    width: 308,
+    height: 1,
+    position: "absolute",
+    backgroundColor: "rgb(230,230,230)"
+  },
+  icon2: {
+    top: "61.95%",
+    left: 50,
+    position: "absolute",
+    backgroundColor: "transparent",
+    color: "rgba(177,11,31,1)",
+    fontSize: 40
+  },
+  text7: {
+    top: "64.16%",
+    left: 101,
+    position: "absolute",
+    backgroundColor: "transparent",
+    opacity: 1,
+    fontSize: 18,
+    fontFamily: "Arial-BoldMT",
+    color: "rgba(255,255,255,1)"
+  },
+  text8: {
+    top: "61.95%",
+    left: 102,
+    position: "absolute",
+    backgroundColor: "transparent",
+    opacity: 1,
+    fontSize: 13,
+    fontFamily: "Arial-BoldMT",
+    color: "rgba(255,255,255,1)"
   }
 });

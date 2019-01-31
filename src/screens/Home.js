@@ -15,37 +15,27 @@ export default class Home extends Component {
         <Center horizontal>
           <Text style={styles.text}>2018 Honda</Text>
         </Center>
-        <View style={styles.rect2}>
-          <Image
-            style={styles.image}
-            source={require("../assets/image3.png")}
-          />
-          <Text style={styles.text3}>Average Fuel</Text>
-          <Text style={styles.text4}>Economy</Text>
-        </View>
-        <View style={styles.rect} />
+        <Center horizontal>
+          <View style={styles.rect} />
+        </Center>
         <Center horizontal>
           <Text style={styles.text2}>Odometer</Text>
         </Center>
-        <View style={styles.rect3}>
-          <Text style={styles.text5}>Economy</Text>
-          <Text style={styles.text6}>Best Fuel</Text>
-          <Image
-            style={styles.image2}
-            source={require("../assets/image3.png")}
-          />
-        </View>
-        <Text style={styles.KRM5on}>32,498.45</Text>
-        <Text style={styles.WEf4FD}>Average Fuel</Text>
-        <Text style={styles.UPcFHZ}>mpg</Text>
-        <Text style={styles.text10}>32</Text>
-        <Text style={styles.text11}>mpg</Text>
         <Center horizontal>
-          <View style={styles.rect4}>
-            <Text style={styles.text12}>VIN #</Text>
-            <Text style={styles.text13}>38474746920033999</Text>
-          </View>
+          <Text style={styles.KRM5on}>32,498.45</Text>
         </Center>
+        <Text style={styles.text3}>Average Fuel</Text>
+        <Text style={styles.text4}>Economy</Text>
+        <Text style={styles.text5}>Economy</Text>
+        <Text style={styles.text6}>Best Fuel</Text>
+        <Text style={styles.text12}>VIN #</Text>
+        <Text style={styles.text13}>38474746920033999</Text>
+        <Image style={styles.image} source={require("../assets/image3.png")} />
+        <Image style={styles.image2} source={require("../assets/image3.png")} />
+        <Text style={styles.text14}>32</Text>
+        <Text style={styles.text15}>mpg</Text>
+        <Text style={styles.text16}>36</Text>
+        <Text style={styles.text17}>mpg</Text>
       </View>
     );
   }
@@ -72,22 +62,23 @@ const styles = StyleSheet.create({
   background: {
     position: "absolute",
     top: "12.68%",
-    left: "0%",
-    height: 631,
-    width: 375
+
+    height: 632,
+    width: 375,
+    left: "0%"
   },
   text: {
-    top: 155.47,
+    top: 150.72,
     position: "absolute",
     backgroundColor: "transparent",
     color: "rgba(255,255,255,1)",
-    fontFamily: "Oswald-Medium",
+    fontFamily: "Arial-BoldMT",
     fontSize: 40
   },
   rect: {
     height: 54,
     width: 296,
-    top: 293,
+    top: 293.5,
     position: "absolute",
     backgroundColor: "rgba(33,42,87,1)",
     opacity: 1,
@@ -98,159 +89,141 @@ const styles = StyleSheet.create({
     },
     shadowRadius: 5,
     elevation: 15,
-    shadowOpacity: 1,
-    left: "10.67%"
+    shadowOpacity: 1
   },
   text2: {
-    top: 358,
+    top: 363,
     position: "absolute",
     backgroundColor: "transparent",
     fontSize: 22,
-    fontFamily: "Oswald-Medium",
+    fontFamily: "Arial-BoldMT",
+    color: "rgba(255,255,255,1)",
+    opacity: 0.75
+  },
+
+  KRM5on: {
+    top: 302.5,
+
+    position: "absolute",
+    backgroundColor: "transparent",
+    opacity: 1,
+    fontSize: 35,
+    fontFamily: "Verdana-Bold",
     color: "rgba(255,255,255,1)"
   },
-  rect2: {
-    height: 207,
-    width: 135,
-    top: 427,
-    left: 37,
-    position: "absolute"
-  },
-  image: {
-    top: 0,
-    left: 0,
-    width: 135,
-    height: 135,
-    position: "absolute"
-  },
+
   text3: {
-    top: "74.88%",
-    left: "10.37%",
+    top: "71.67%",
+    left: "10.13%",
     position: "absolute",
     backgroundColor: "transparent",
-    opacity: 0.65,
+    opacity: 0.75,
     fontSize: 22,
-    fontFamily: "Oswald-Medium",
+    fontFamily: "Arial-BoldMT",
     color: "rgba(255,255,255,1)"
   },
   text4: {
-    top: "89.37%",
-    left: "22.96%",
+    top: "75.37%",
+    left: "15.2%",
     position: "absolute",
     backgroundColor: "transparent",
-    opacity: 0.65,
+    opacity: 0.75,
     fontSize: 22,
-    fontFamily: "Oswald-Medium",
+    fontFamily: "Arial-BoldMT",
     color: "rgba(255,255,255,1)"
   },
-  rect3: {
-    height: 207,
-    width: 135,
-    top: 427,
-    left: 211,
-    position: "absolute"
-  },
   text5: {
-    top: "89.37%",
-    left: "22.96%",
+    top: "75.49%",
+    left: "61.87%",
     position: "absolute",
     backgroundColor: "transparent",
-    opacity: 0.65,
+    opacity: 0.75,
     fontSize: 22,
-    fontFamily: "Oswald-Medium",
+    fontFamily: "Arial-BoldMT",
     color: "rgba(255,255,255,1)"
   },
   text6: {
-    top: "74.88%",
-    left: "21.48%",
+    top: "71.67%",
+    left: "61.6%",
     position: "absolute",
     backgroundColor: "transparent",
-    opacity: 0.65,
+    opacity: 0.75,
     fontSize: 22,
-    fontFamily: "Oswald-Medium",
+    fontFamily: "Arial-BoldMT",
     color: "rgba(255,255,255,1)"
   },
-  image2: {
-    top: 0,
-    left: 0,
+  text12: {
+    top: "83.87%",
+    left: "15.2%",
+    position: "absolute",
+    backgroundColor: "transparent",
+    opacity: 0.75,
+    fontSize: 22,
+    fontFamily: "Arial-BoldMT",
+    color: "rgba(255,255,255,1)"
+  },
+  text13: {
+    top: "83.87%",
+    left: "30.93%",
+    position: "absolute",
+    backgroundColor: "transparent",
+    opacity: 1,
+    fontSize: 22,
+    fontFamily: "Arial-BoldMT",
+    color: "rgba(255,255,255,1)"
+  },
+  image: {
+    top: 426,
+    left: 40,
     width: 135,
     height: 135,
     position: "absolute"
   },
-  KRM5on: {
-    top: 302.5,
-    left: "19.33%",
-    position: "absolute",
-    backgroundColor: "transparent",
-    opacity: 1,
-    fontSize: 35,
-    fontFamily: "ConthraxSb-Regular",
-    color: "rgba(255,255,255,1)"
-  },
-  WEf4FD: {
-    top: "56.03%",
-    left: "20.53%",
-    position: "absolute",
-    backgroundColor: "transparent",
-    opacity: 0.65,
-    fontSize: 35,
-    fontFamily: "Oswald-Medium",
-    color: "rgba(255,255,255,1)"
-  },
-  UPcFHZ: {
-    top: "60.34%",
-    left: "24.27%",
-    position: "absolute",
-    backgroundColor: "transparent",
-    opacity: 0.65,
-    fontSize: 16,
-    fontFamily: "Oswald-Medium",
-    color: "rgba(255,255,255,1)"
-  },
-  text10: {
-    top: "55.91%",
-    left: "66.93%",
-    position: "absolute",
-    backgroundColor: "transparent",
-    opacity: 1,
-    fontSize: 35,
-    fontFamily: "ConthraxSb-Regular",
-    color: "rgba(255,255,255,1)"
-  },
-  text11: {
-    top: "60.22%",
-    left: "70.67%",
-    position: "absolute",
-    backgroundColor: "transparent",
-    opacity: 0.65,
-    fontSize: 16,
-    fontFamily: "Oswald-Medium",
-    color: "rgba(255,255,255,1)"
-  },
-  rect4: {
-    height: 24,
-    width: 238,
-    top: 681,
+  image2: {
+    top: 426,
+    left: 213.5,
+    width: 135,
+    height: 135,
     position: "absolute"
   },
-  text12: {
-    top: "4.17%",
-    left: "0%",
-    position: "absolute",
-    backgroundColor: "transparent",
-    opacity: 0.65,
-    fontSize: 22,
-    fontFamily: "Oswald-Medium",
-    color: "rgba(255,255,255,1)"
-  },
-  text13: {
-    top: "0%",
-    left: "22.27%",
+  text14: {
+    top: "55.42%",
     position: "absolute",
     backgroundColor: "transparent",
     opacity: 1,
-    fontSize: 22,
-    fontFamily: "Oswald-Medium",
-    color: "rgba(255,255,255,1)"
+    fontSize: 35,
+    fontFamily: "Verdana-Bold",
+    color: "rgba(255,255,255,1)",
+    left: "22.27%"
+  },
+  text15: {
+    position: "absolute",
+    backgroundColor: "transparent",
+    opacity: 0.75,
+    fontSize: 18,
+    fontFamily: "Arial-BoldMT",
+    color: "rgba(255,255,255,1)",
+    left: "23.47%",
+    top: "59.73%"
+  },
+  text16: {
+    top: "55.42%",
+    position: "absolute",
+    backgroundColor: "transparent",
+    opacity: 1,
+    fontSize: 35,
+    fontFamily: "Verdana-Bold",
+    color: "rgba(255,255,255,1)",
+    left: "68.27%"
+  },
+  text17: {
+    top: "59.73%",
+    position: "absolute",
+    backgroundColor: "transparent",
+    opacity: 0.75,
+    fontSize: 18,
+    fontFamily: "Arial-BoldMT",
+    color: "rgba(255,255,255,1)",
+    left: "69.6%"
   }
 });

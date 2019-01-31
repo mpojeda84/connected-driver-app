@@ -14,7 +14,7 @@ export default class Navigation extends Component {
         <Icon
           style={styles.icon2}
           name="car"
-          type="FontAwesome"
+          type="MaterialCommunityIcons"
           onPress={() => {
             this.props.navigation.push("Driving");
           }}
