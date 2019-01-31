@@ -10,7 +10,16 @@ import { realtime } from './../../lib/Firebase'
 const list = [
     { severity: '0', date: '01/19/2019 05:35PM', message: 'Speed Higher than 85mph Speed Higher than 85mph Speed Higher than 85mph' },
     { severity: '1', date: '01/19/2019 05:35PM', message: 'Speed Higher than 85mph' },
-    { severity: '1', date: '01/19/2019 05:35PM', message: 'Speed Higher than 85mph' }
+    { severity: '1', date: '01/19/2019 05:35PM', message: 'Speed Higher than 85mph' },
+    { severity: '0', date: '01/19/2019 05:35PM', message: 'Speed Higher than 85mph' },
+    { severity: '1', date: '01/19/2019 05:35PM', message: 'Speed Higher than 85mph' },
+    { severity: '1', date: '01/19/2019 05:35PM', message: 'Speed Higher than 85mph' },
+    { severity: '0', date: '01/19/2019 05:35PM', message: 'Speed Higher than 85mph' },
+    { severity: '0', date: '01/19/2019 05:35PM', message: 'Speed Higher than 85mph' },
+    { severity: '1', date: '01/19/2019 05:35PM', message: 'Speed Higher than 85mph' },
+    { severity: '0', date: '01/19/2019 05:35PM', message: 'Speed Higher than 85mph' },
+    { severity: '1', date: '01/19/2019 05:35PM', message: 'Speed Higher than 85mph' },
+
 ]
 
 export default class Alerts extends Component {
@@ -33,9 +42,10 @@ export default class Alerts extends Component {
 
                 <FlatList
                     data={list}
-                    renderItem={({ item }) => {
+                    keyExtractor={(item) => (Date.now() + Math.random()).toString()}
+                    renderItem={({ item, index }) => {
                         return (
-                            <View style={{flexDirection: 'row', padding: 15, marginRight: 10}}>
+                            <View key={index} style={{flexDirection: 'row', padding: 15, marginRight: 10}}>
                                 <Icon style={[styles.icon]}name='warning' type='FontAwesome' color={item.severity === '1' ? 'red' : 'rgba(255,217,41,1)'} />
                                 <View style={{paddingRight: 15}}>
                                     <Text style={styles.text2}>{item.date}</Text>
@@ -43,7 +53,7 @@ export default class Alerts extends Component {
                                 </View>
                             </View>)
                     }}
-                    style={{ marginTop: 300 }}
+                    style={{ marginTop: 300, marginBottom: 80 }}
                 />
                 <Center horizontal>
                     <Text style={styles.text4}>Alerts</Text>
@@ -78,8 +88,7 @@ export default class Alerts extends Component {
 const styles = StyleSheet.create({
     root: {
         backgroundColor: 'white',
-        flex: 1,
-        flexShrink: 1
+        flex: 1
     },
     header: {
         top: 0,
