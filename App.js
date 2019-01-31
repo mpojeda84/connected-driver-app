@@ -8,10 +8,6 @@ import { Font } from 'expo'
 import { StackNavigator, DrawerNavigator } from 'react-navigation'
 
 const DrawerNavigation = DrawerNavigator({
-  Alerts: {
-    screen: Alerts
-  },
-
   Home: {
     screen: Home
   },
@@ -20,6 +16,9 @@ const DrawerNavigation = DrawerNavigator({
   },
   Community: {
     screen: Community
+  },
+  Alerts: {
+    screen: Alerts
   }
 })
 const StackNavigation = StackNavigator(

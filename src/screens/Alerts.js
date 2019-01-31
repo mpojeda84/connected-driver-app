@@ -36,7 +36,7 @@ export default class Alerts extends Component {
                     renderItem={({ item }) => {
                         return (
                             <View style={{flexDirection: 'row', padding: 15, marginRight: 10}}>
-                                <Icon style={[styles.icon, {color: item.severity === 1 ? 'red' : 'rgba(255,217,41,1)'}]} name='warning' type='FontAwesome' />
+                                <Icon style={[styles.icon]}name='warning' type='FontAwesome' color={item.severity === '1' ? 'red' : 'rgba(255,217,41,1)'} />
                                 <View style={{paddingRight: 15}}>
                                     <Text style={styles.text2}>{item.date}</Text>
                                     <Text style={styles.text3}>{item.message}</Text>
@@ -106,7 +106,6 @@ const styles = StyleSheet.create({
 
     icon: {
         backgroundColor: 'transparent',
-        color: 'rgba(255,217,41,1)',
         fontSize: 40,
         marginRight: 10
     },
