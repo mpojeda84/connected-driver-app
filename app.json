@@ -9,11 +9,10 @@
         "android"
       ],
       "version": "1.0.0",
-      "icon": "./assets/images/icon.png",
       "splash": {
-        "image": "./assets/images/splash.png",
+        "image": "./src/assets/splash.png",
         "resizeMode": "contain",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#000000"
       },
       "updates": {
         "fallbackToCacheTimeout": 0

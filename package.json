@@ -18,15 +18,17 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@builderx/icons": "^0.1.5",
+    "@builderx/react-native-swiper": "^0.1.5",
+    "@builderx/tab-view": "^0.1.5",
+    "@builderx/utils": "^0.1.6",
     "expo": "^32.0.0",
-    "react": "16.5.0",
     "firebase": "^5.5.1",
     "lodash": "^4.17.4",
+    "numbro": "^2.1.2",
+    "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-    "react-navigation": "1.2.1",
-    "@builderx/tab-view": "^0.1.5",
-    "@builderx/icons": "^0.1.5",
-    "@builderx/utils": "^0.1.6",
-    "@builderx/react-native-swiper": "^0.1.5"
+    "react-native-segmented-control-tab": "^3.4.0",
+    "react-navigation": "1.2.1"
   }
 }
